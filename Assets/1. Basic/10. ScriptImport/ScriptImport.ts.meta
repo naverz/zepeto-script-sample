@@ -1,0 +1,35 @@
+fileFormatVersion: 2
+guid: 6b334a260d59c4e3fb18b91edc260903
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\n//
+    import custom script from path\r\nconst ExtraComponent_1 = require(\"./lib/ExtraComponent\");\r\nclass
+    Properties extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start() {\r\n       
+    // add script component\r\n        this.gameObject.AddComponent($typeof(ExtraComponent_1.default));\r\n       
+    this.extComponent = this.gameObject.GetComponent($typeof(ExtraComponent_1.default));\r\n   
+    }\r\n    Update() {\r\n        // get value by method call\r\n        var count
+    = this.extComponent.GetCount();\r\n        if (count > 10) {\r\n            //
+    set value by method call \r\n            this.extComponent.SetCount(0);\r\n       
+    }\r\n        // get public property\r\n        var resultString = this.extComponent.stringProperty;\r\n       
+    // print result\r\n        console.log(`result : ${resultString}`);\r\n       
+    this.resultUi.text = resultString;\r\n    }\r\n}\r\nexports.default = Properties;\r\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiU2NyaXB0SW1wb3J0LmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiU2NyaXB0SW1wb3J0LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsaURBQW9EO0FBR3BELGlDQUFpQztBQUNqQyx5REFBaUQ7QUFFakQsTUFBcUIsVUFBVyxTQUFRLHFDQUFxQjtJQUt6RCxLQUFLO1FBRUQsdUJBQXVCO1FBQ3ZCLElBQUksQ0FBQyxVQUFVLENBQUMsWUFBWSxTQUFDLHdCQUFjLEdBQUk7UUFDL0MsSUFBSSxDQUFDLFlBQVksR0FBRyxJQUFJLENBQUMsVUFBVSxDQUFDLFlBQVksU0FBQyx3QkFBYyxFQUFHLENBQUM7SUFDdkUsQ0FBQztJQUVELE1BQU07UUFFRiwyQkFBMkI7UUFDM0IsSUFBSSxLQUFLLEdBQUcsSUFBSSxDQUFDLFlBQVksQ0FBQyxRQUFRLEVBQUUsQ0FBQztRQUV6QyxJQUFHLEtBQUssR0FBRyxFQUFFLEVBQ2I7WUFDSSw0QkFBNEI7WUFDNUIsSUFBSSxDQUFDLFlBQVksQ0FBQyxRQUFRLENBQUMsQ0FBQyxDQUFDLENBQUM7U0FDakM7UUFFRCxzQkFBc0I7UUFDdEIsSUFBSSxZQUFZLEdBQUcsSUFBSSxDQUFDLFlBQVksQ0FBQyxjQUFjLENBQUM7UUFFcEQsZUFBZTtRQUNmLE9BQU8sQ0FBQyxHQUFHLENBQUMsWUFBWSxZQUFZLEVBQUUsQ0FBQyxDQUFDO1FBQ3hDLElBQUksQ0FBQyxRQUFRLENBQUMsSUFBSSxHQUFHLFlBQVksQ0FBQztJQUN0QyxDQUFDO0NBQ0o7QUE5QkQsNkJBOEJDIn0=","assetPath":"Assets/1.
+    Basic/10. ScriptImport/ScriptImport.ts","manifest":{"properties":[{"assembly":"UnityEngine.UI","name":"resultUi","type":"UnityEngine.UI.Text","isArray":false,"attributes":[]}],"name":"Properties","description":""},"isCompiled":true}'
+  typescriptHash: b4bef142dd3efef24c83abca648a1d10

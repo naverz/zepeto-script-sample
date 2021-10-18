@@ -1,0 +1,35 @@
+fileFormatVersion: 2
+guid: ac19ed9cf12424f96a93df8bd9d1c851
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    UnityEngine_1 = require(\"UnityEngine\");\r\nclass GameObjectSample extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    Start() {\r\n        //GameObject Create\r\n        var tempObj = new
+    UnityEngine_1.GameObject();\r\n        var obj = UnityEngine_1.Object.Instantiate(tempObj);\r\n       
+    //GameObject Destroy\r\n        UnityEngine_1.Object.Destroy(obj);\r\n       
+    // GetComponent with Generic\r\n        var myTransform = this.GetComponent($typeof(UnityEngine_1.Transform));\r\n       
+    // AddComponent with Generic\r\n        var animator = this.gameObject.AddComponent($typeof(UnityEngine_1.Animator));\r\n       
+    var lightComponent = this.gameObject.AddComponent($typeof(UnityEngine_1.Light));\r\n       
+    // // Add Component CLR Type Access\r\n        // var Light = $typeof(\"UnityEngine.Light\");\r\n       
+    // var lightComponent = this.gameObject.AddComponent<typeof Light>();       
+    \r\n        // Get Component CLR Type Access\r\n        // lightComponent = this.gameObject.GetComponent<typeof
+    Light>();\r\n    }\r\n}\r\nexports.default = GameObjectSample;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiR2FtZU9iamVjdFNhbXBsZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkdhbWVPYmplY3RTYW1wbGUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxpREFBcUQ7QUFDckQsNkNBQXlFO0FBRXpFLE1BQXFCLGdCQUFpQixTQUFRLHFDQUFxQjtJQUMvRCxLQUFLO1FBQ0QsbUJBQW1CO1FBQ25CLElBQUksT0FBTyxHQUFHLElBQUksd0JBQVUsRUFBRSxDQUFDO1FBQy9CLElBQUksR0FBRyxHQUFHLG9CQUFNLENBQUMsV0FBVyxDQUFDLE9BQU8sQ0FBQyxDQUFDO1FBRXRDLG9CQUFvQjtRQUNwQixvQkFBTSxDQUFDLE9BQU8sQ0FBQyxHQUFHLENBQUMsQ0FBQztRQUVwQiw0QkFBNEI7UUFDNUIsSUFBSSxXQUFXLEdBQUcsSUFBSSxDQUFDLFlBQVksU0FBQyx1QkFBUyxFQUFHLENBQUM7UUFFakQsNEJBQTRCO1FBQzVCLElBQUksUUFBUSxHQUFHLElBQUksQ0FBQyxVQUFVLENBQUMsWUFBWSxTQUFDLHNCQUFRLEVBQUcsQ0FBQztRQUd4RCxJQUFJLGNBQWMsR0FBRyxJQUFJLENBQUMsVUFBVSxDQUFDLFlBQVksU0FBQyxtQkFBSyxFQUFHLENBQUM7UUFFM0QsbUNBQW1DO1FBQ25DLDRDQUE0QztRQUM1Qyw2RUFBNkU7UUFFN0UsZ0NBQWdDO1FBQ2hDLGlFQUFpRTtJQUNyRSxDQUFDO0NBQ0o7QUF6QkQsbUNBeUJDIn0=","assetPath":"Assets/1.
+    Basic/5. GameObject/GameObjectSample.ts","manifest":{"properties":[],"name":"GameObjectSample","description":""},"isCompiled":true}'
+  typescriptHash: 0efe30400740148aa29e0c75ddfa0658

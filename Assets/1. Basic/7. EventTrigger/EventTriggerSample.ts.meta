@@ -1,0 +1,33 @@
+fileFormatVersion: 2
+guid: 5fe8203d99da8bd42a2d09d618eef829
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    UnityEngine_EventSystems_1 = require(\"UnityEngine.EventSystems\");\r\nconst
+    UnityEngine_EventSystems_EventTrigger_1 = require(\"UnityEngine.EventSystems.EventTrigger\");\r\nclass
+    EventTriggerSample extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start()
+    {\r\n        var trigger = this.gameObject.GetComponent($typeof(UnityEngine_EventSystems_1.EventTrigger));\r\n       
+    // create eventsystem entry\r\n        var entry = new UnityEngine_EventSystems_EventTrigger_1.Entry();\r\n       
+    // specify event type & delegation\r\n        entry.eventID = UnityEngine_EventSystems_1.EventTriggerType.PointerClick;\r\n       
+    entry.callback.AddListener(() => {\r\n            console.log(\"click\");\r\n       
+    });\r\n        // register event entry\r\n        trigger.triggers.Add(entry);\r\n   
+    }\r\n}\r\nexports.default = EventTriggerSample;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRXZlbnRUcmlnZ2VyU2FtcGxlLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiRXZlbnRUcmlnZ2VyU2FtcGxlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsaURBQXFEO0FBQ3JELHVFQUF3RTtBQUN4RSxpR0FBNEQ7QUFFNUQsTUFBcUIsa0JBQW1CLFNBQVEscUNBQXFCO0lBRWpFLEtBQUs7UUFDRCxJQUFJLE9BQU8sR0FBRyxJQUFJLENBQUMsVUFBVSxDQUFDLFlBQVksU0FBQyx1Q0FBWSxFQUFHLENBQUM7UUFFM0QsMkJBQTJCO1FBQzNCLElBQUksS0FBSyxHQUFHLElBQUksNkNBQUssRUFBRSxDQUFDO1FBRXhCLGtDQUFrQztRQUNsQyxLQUFLLENBQUMsT0FBTyxHQUFHLDJDQUFnQixDQUFDLFlBQVksQ0FBQztRQUM5QyxLQUFLLENBQUMsUUFBUSxDQUFDLFdBQVcsQ0FBQyxHQUFHLEVBQUU7WUFDNUIsT0FBTyxDQUFDLEdBQUcsQ0FBQyxPQUFPLENBQUMsQ0FBQTtRQUN4QixDQUFDLENBQUMsQ0FBQztRQUVILHVCQUF1QjtRQUN2QixPQUFPLENBQUMsUUFBUSxDQUFDLEdBQUcsQ0FBQyxLQUFLLENBQUMsQ0FBQztJQUNoQyxDQUFDO0NBQ0o7QUFqQkQscUNBaUJDIn0=","assetPath":"Assets/1.
+    Basic/7. EventTrigger/EventTriggerSample.ts","manifest":{"properties":[],"name":"EventTriggerSample","description":""},"isCompiled":true}'
+  typescriptHash: c949455f19ac74fa12d5d0054a5989bd

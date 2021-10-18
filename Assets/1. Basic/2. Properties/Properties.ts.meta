@@ -1,0 +1,32 @@
+fileFormatVersion: 2
+guid: 5625c2b56075a48e1ad0eda42bb49091
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    UnityEngine_1 = require(\"UnityEngine\");\r\nclass Properties extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    Start() {\r\n        console.log(typeof (this.floatValues));\r\n       
+    console.log(`floatValue : ${this.floatValue}`);\r\n        console.log(`strValue
+    : ${this.strValue}`);\r\n        console.log(`${this.floatValues.length}`);\r\n       
+    // console.log(`type ${typeof extraComponent}`);\r\n    }\r\n    Update() {\r\n       
+    // rotate cube a\r\n        var transform = this.gameOject.GetComponent($typeof(UnityEngine_1.Transform));\r\n       
+    transform.Rotate(this.vectorValue);\r\n        // rotate cube b\r\n        this.transformValue.Rotate(this.vectorValue);\r\n   
+    }\r\n}\r\nexports.default = Properties;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUHJvcGVydGllcy5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIlByb3BlcnRpZXMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFDQSxpREFBb0Q7QUFDcEQsNkNBQTJEO0FBRTNELE1BQXFCLFVBQVcsU0FBUSxxQ0FBcUI7SUFpQnpELEtBQUs7UUFFRCxPQUFPLENBQUMsR0FBRyxDQUFDLE9BQU0sQ0FBQyxJQUFJLENBQUMsV0FBVyxDQUFDLENBQUMsQ0FBQztRQUN0QyxPQUFPLENBQUMsR0FBRyxDQUFDLGdCQUFnQixJQUFJLENBQUMsVUFBVSxFQUFFLENBQUMsQ0FBQztRQUMvQyxPQUFPLENBQUMsR0FBRyxDQUFDLGNBQWMsSUFBSSxDQUFDLFFBQVEsRUFBRSxDQUFDLENBQUM7UUFFM0MsT0FBTyxDQUFDLEdBQUcsQ0FBQyxHQUFHLElBQUksQ0FBQyxXQUFXLENBQUMsTUFBTSxFQUFFLENBQUMsQ0FBQTtRQUV6QyxnREFBZ0Q7SUFDcEQsQ0FBQztJQUVELE1BQU07UUFFRixnQkFBZ0I7UUFDaEIsSUFBSSxTQUFTLEdBQUcsSUFBSSxDQUFDLFNBQVMsQ0FBQyxZQUFZLFNBQUMsdUJBQVMsRUFBRyxDQUFDO1FBQ3pELFNBQVMsQ0FBQyxNQUFNLENBQUMsSUFBSSxDQUFDLFdBQVcsQ0FBQyxDQUFDO1FBRW5DLGdCQUFnQjtRQUNoQixJQUFJLENBQUMsY0FBYyxDQUFDLE1BQU0sQ0FBQyxJQUFJLENBQUMsV0FBVyxDQUFDLENBQUM7SUFDakQsQ0FBQztDQUNKO0FBckNELDZCQXFDQyJ9","assetPath":"Assets/1.
+    Basic/2. Properties/Properties.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"floatValue","type":"System.Single","isArray":false,"attributes":[]},{"assembly":"mscorlib","name":"floatValues","type":"System.Single[]","isArray":true,"attributes":[]},{"assembly":"mscorlib","name":"strValue2","type":"System.String","isArray":false,"attributes":[{"name":"HideInInspector"}]},{"assembly":"UnityEngine.CoreModule","name":"gameOject","type":"UnityEngine.GameObject","isArray":false,"attributes":[]},{"assembly":"UnityEngine.CoreModule","name":"transformValue","type":"UnityEngine.Transform","isArray":false,"attributes":[]}],"name":"Properties","description":""},"isCompiled":true}'
+  typescriptHash: d95f47be918180043f2c09b42011e6a4

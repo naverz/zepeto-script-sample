@@ -1,0 +1,30 @@
+fileFormatVersion: 2
+guid: a016f8e9b7d864695ab06690781ac485
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    UnityEngine_1 = require(\"UnityEngine\");\r\nclass Coroutine extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    Start() {\r\n        this.curent = 0;\r\n        console.log(`start
+    routine`);\r\n        this.StartCoroutine(this.DoRoutine());\r\n    }\r\n   
+    *DoRoutine() {\r\n        while (true) {\r\n            console.log(`[${this.curent++}]
+    Wait to next routine..`);\r\n            yield new UnityEngine_1.WaitForSeconds(1);\r\n       
+    }\r\n    }\r\n}\r\nexports.default = Coroutine;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ29yb3V0aW5lLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiQ29yb3V0aW5lLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsaURBQW9EO0FBQ3BELDZDQUEyQztBQUMzQyxNQUFxQixTQUFVLFNBQVEscUNBQXFCO0lBRXhELEtBQUs7UUFFRCxJQUFJLENBQUMsTUFBTSxHQUFHLENBQUMsQ0FBQztRQUNoQixPQUFPLENBQUMsR0FBRyxDQUFDLGVBQWUsQ0FBQyxDQUFDO1FBQzdCLElBQUksQ0FBQyxjQUFjLENBQUMsSUFBSSxDQUFDLFNBQVMsRUFBRSxDQUFDLENBQUM7SUFDMUMsQ0FBQztJQUVELENBQUMsU0FBUztRQUNOLE9BQU0sSUFBSSxFQUFFO1lBQ1IsT0FBTyxDQUFDLEdBQUcsQ0FBQyxJQUFJLElBQUksQ0FBQyxNQUFNLEVBQUUsMEJBQTBCLENBQUMsQ0FBQztZQUN6RCxNQUFNLElBQUksNEJBQWMsQ0FBQyxDQUFDLENBQUMsQ0FBQztTQUMvQjtJQUNMLENBQUM7Q0FDSjtBQWZELDRCQWVDIn0=","assetPath":"Assets/1.
+    Basic/4. Coroutine/Coroutine.ts","manifest":{"properties":[],"name":"Coroutine","description":""},"isCompiled":true}'
+  typescriptHash: 0b907733ccbe71fdc11e4ece5637f9d4

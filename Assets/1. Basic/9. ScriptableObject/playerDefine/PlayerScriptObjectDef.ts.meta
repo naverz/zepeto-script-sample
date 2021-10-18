@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: e41123262b677354fbdba67d5963e89d
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nclass PlayerScriptObjectDef {\r\n}\r\nexports.default =
+    PlayerScriptObjectDef;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUGxheWVyU2NyaXB0T2JqZWN0RGVmLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiUGxheWVyU2NyaXB0T2JqZWN0RGVmLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBRUEsTUFBcUIscUJBQXFCO0NBS3pDO0FBTEQsd0NBS0MifQ==","assetPath":"Assets/1.
+    Basic/9. ScriptableObject/playerDefine/PlayerScriptObjectDef.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"name","type":"System.String","isArray":false,"attributes":[]},{"assembly":"mscorlib","name":"hp","type":"System.Single","isArray":false,"attributes":[]},{"assembly":"UnityEngine.CoreModule","name":"position","type":"UnityEngine.Vector3","isArray":false,"attributes":[]},{"assembly":"UnityEngine.CoreModule","name":"rotation","type":"UnityEngine.Vector3","isArray":false,"attributes":[]}],"name":"PlayerScriptObjectDef","description":""},"isCompiled":true}'
+  typescriptHash: 5ea705b75a7531dfc48497dfa07d93f6

@@ -1,0 +1,44 @@
+fileFormatVersion: 2
+guid: 466f4350d62a54d9893f3e7c4ba8bf07
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass
+    Sample_MonoBehaviourLifeCycle extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n   
+    // All Unity MonoBehaviour events are available.\r\n    // https://docs.unity3d.com/ScriptReference/MonoBehaviour.html\r\n   
+    /*\r\n    Awake() { }\r\n    OnEnable() { }\r\n    Start() { }\r\n    Update()
+    { }\r\n    ...\r\n    */\r\n    Awake() {\r\n        console.log(''Awake.'');\r\n   
+    }\r\n    OnEnable() {\r\n        console.log(''OnEnable.'');\r\n    }\r\n   
+    Start() {\r\n        console.log(''Start.'');\r\n    }\r\n    Update() {\r\n       
+    console.log(''OnUpdate.'');\r\n    }\r\n    FixedUpdate() {\r\n        console.log(''FixedUpdate.'');\r\n   
+    }\r\n    LateUpdate() {\r\n        console.log(''LateUpdate.'');\r\n    }\r\n   
+    OnDisable() {\r\n        console.log(''OnDisable.'');\r\n    }\r\n    OnDestroy()
+    {\r\n        console.log(''OnDestroy.'');\r\n    }\r\n    OnTriggerEnter() {\r\n       
+    console.log(''OnTriggerEnter.'');\r\n    }\r\n    OnTriggerExit() {\r\n       
+    console.log(''OnTriggerExit.'');\r\n    }\r\n    OnTriggerStay() {\r\n       
+    console.log(''OnTriggerStay.'');\r\n    }\r\n    OnTriggerEnter2D() {\r\n       
+    console.log(''OnTriggerEnter2D.'');\r\n    }\r\n    OnTriggerExit2D() {\r\n       
+    console.log(''OnTriggerExit2D.'');\r\n    }\r\n    OnTriggerStay2D() {\r\n       
+    console.log(''OnTriggerStay2D.'');\r\n    }\r\n    OnGUI() {\r\n        console.log(''OnGUI.'');\r\n   
+    }\r\n    OnApplicationFocus() {\r\n        console.log(''OnApplicationFocus.'');\r\n   
+    }\r\n    OnApplicationPause() {\r\n        console.log(''OnApplicationPause.'');\r\n   
+    }\r\n    OnApplicationQuit() {\r\n        console.log(''OnApplicationQuit.'');\r\n   
+    }\r\n}\r\nexports.default = Sample_MonoBehaviourLifeCycle;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTW9ub0JlaGF2aW91cl9MaWZlQ3ljbGUuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJNb25vQmVoYXZpb3VyX0xpZmVDeWNsZS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUNBLGlEQUFxRDtBQUVyRCxNQUF3Qiw2QkFBOEIsU0FBUyxxQ0FBcUI7SUFFaEYsZ0RBQWdEO0lBQ2hELDhEQUE4RDtJQUM5RDs7Ozs7O01BTUU7SUFDRixLQUFLO1FBQ0QsT0FBTyxDQUFDLEdBQUcsQ0FBQyxRQUFRLENBQUMsQ0FBQztJQUMxQixDQUFDO0lBQ0QsUUFBUTtRQUNKLE9BQU8sQ0FBQyxHQUFHLENBQUMsV0FBVyxDQUFDLENBQUM7SUFDN0IsQ0FBQztJQUNELEtBQUs7UUFDRCxPQUFPLENBQUMsR0FBRyxDQUFDLFFBQVEsQ0FBQyxDQUFDO0lBQzFCLENBQUM7SUFFRCxNQUFNO1FBQ0YsT0FBTyxDQUFDLEdBQUcsQ0FBQyxXQUFXLENBQUMsQ0FBQztJQUM3QixDQUFDO0lBQ0QsV0FBVztRQUNQLE9BQU8sQ0FBQyxHQUFHLENBQUMsY0FBYyxDQUFDLENBQUM7SUFDaEMsQ0FBQztJQUNELFVBQVU7UUFDTixPQUFPLENBQUMsR0FBRyxDQUFDLGFBQWEsQ0FBQyxDQUFDO0lBQy9CLENBQUM7SUFFRCxTQUFTO1FBQ0wsT0FBTyxDQUFDLEdBQUcsQ0FBQyxZQUFZLENBQUMsQ0FBQztJQUM5QixDQUFDO0lBQ0QsU0FBUztRQUNMLE9BQU8sQ0FBQyxHQUFHLENBQUMsWUFBWSxDQUFDLENBQUM7SUFDOUIsQ0FBQztJQUVELGNBQWM7UUFDVixPQUFPLENBQUMsR0FBRyxDQUFDLGlCQUFpQixDQUFDLENBQUM7SUFDbkMsQ0FBQztJQUNELGFBQWE7UUFDVCxPQUFPLENBQUMsR0FBRyxDQUFDLGdCQUFnQixDQUFDLENBQUM7SUFDbEMsQ0FBQztJQUNELGFBQWE7UUFDVCxPQUFPLENBQUMsR0FBRyxDQUFDLGdCQUFnQixDQUFDLENBQUM7SUFDbEMsQ0FBQztJQUVELGdCQUFnQjtRQUNaLE9BQU8sQ0FBQyxHQUFHLENBQUMsbUJBQW1CLENBQUMsQ0FBQztJQUNyQyxDQUFDO0lBQ0QsZUFBZTtRQUNYLE9BQU8sQ0FBQyxHQUFHLENBQUMsa0JBQWtCLENBQUMsQ0FBQztJQUNwQyxDQUFDO0lBQ0QsZUFBZTtRQUNYLE9BQU8sQ0FBQyxHQUFHLENBQUMsa0JBQWtCLENBQUMsQ0FBQztJQUNwQyxDQUFDO0lBRUQsS0FBSztRQUNELE9BQU8sQ0FBQyxHQUFHLENBQUMsUUFBUSxDQUFDLENBQUM7SUFDMUIsQ0FBQztJQUVELGtCQUFrQjtRQUNkLE9BQU8sQ0FBQyxHQUFHLENBQUMscUJBQXFCLENBQUMsQ0FBQztJQUN2QyxDQUFDO0lBQ0Qsa0JBQWtCO1FBQ2QsT0FBTyxDQUFDLEdBQUcsQ0FBQyxxQkFBcUIsQ0FBQyxDQUFDO0lBQ3ZDLENBQUM7SUFDRCxpQkFBaUI7UUFDYixPQUFPLENBQUMsR0FBRyxDQUFDLG9CQUFvQixDQUFDLENBQUM7SUFDdEMsQ0FBQztDQUNKO0FBdkVELGdEQXVFQyJ9","assetPath":"Assets/1.
+    Basic/3. MonoBehaviour/MonoBehaviour_LifeCycle.ts","manifest":{"properties":[],"name":"Sample_MonoBehaviourLifeCycle","description":""},"isCompiled":true}'
+  typescriptHash: 8d04ec2e2ce85e80867e45338e6b92d2

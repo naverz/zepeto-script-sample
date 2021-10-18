@@ -1,0 +1,39 @@
+fileFormatVersion: 2
+guid: fa3d8c93a941d45ab86784798ffb05a5
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass
+    ScriptableObjectSample extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n   
+    Awake() {\r\n        // direct access\r\n        console.log(\"play name : \",
+    this.player.get_Item(\"name\"));\r\n        console.log(\"play hp : \", this.player.get_Item(\"hp\"));\r\n       
+    console.log(\"play position : \", this.player.get_Item(\"position\"));\r\n       
+    console.log(\"play rotation : \", this.player.get_Item(\"rotation\"));\r\n       
+    // generic type call\r\n        let monsterState = this.enemy.targetObject;\r\n       
+    console.log(\"enemy name : \", monsterState.name);\r\n        console.log(\"enemy
+    hp : \", monsterState.hp);\r\n        console.log(\"enemy position : \", monsterState.position);\r\n       
+    console.log(\"enemy rotation : \", monsterState.rotation);\r\n        // type
+    casting\r\n        let playerPosition = this.player.get_Item(\"position\");\r\n       
+    console.log(`player position : (x:${playerPosition.x}, y:${playerPosition.y},
+    z:${playerPosition.z})`);\r\n        // generic type can access class member
+    \r\n        console.log(`enemy position : (x:${monsterState.position.x}, y:${monsterState.position.y},
+    z:${monsterState.position.z})`);\r\n    }\r\n}\r\nexports.default = ScriptableObjectSample;\r\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiU2NyaXB0YWJsZU9iamVjdC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIlNjcmlwdGFibGVPYmplY3QudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFDQSxpREFBNkU7QUFJN0UsTUFBcUIsc0JBQXVCLFNBQVEscUNBQXFCO0lBS3JFLEtBQUs7UUFFRCxnQkFBZ0I7UUFDaEIsT0FBTyxDQUFDLEdBQUcsQ0FBQyxjQUFjLEVBQUUsSUFBSSxDQUFDLE1BQU0sVUFBQyxNQUFNLEVBQUUsQ0FBQztRQUNqRCxPQUFPLENBQUMsR0FBRyxDQUFDLFlBQVksRUFBRSxJQUFJLENBQUMsTUFBTSxVQUFDLElBQUksRUFBRSxDQUFDO1FBQzdDLE9BQU8sQ0FBQyxHQUFHLENBQUMsa0JBQWtCLEVBQUUsSUFBSSxDQUFDLE1BQU0sVUFBQyxVQUFVLEVBQUUsQ0FBQztRQUN6RCxPQUFPLENBQUMsR0FBRyxDQUFDLGtCQUFrQixFQUFFLElBQUksQ0FBQyxNQUFNLFVBQUMsVUFBVSxFQUFFLENBQUM7UUFFekQsb0JBQW9CO1FBQ3BCLElBQUksWUFBWSxHQUFHLElBQUksQ0FBQyxLQUFLLENBQUMsWUFBWSxDQUFDO1FBQzNDLE9BQU8sQ0FBQyxHQUFHLENBQUMsZUFBZSxFQUFFLFlBQVksQ0FBQyxJQUFJLENBQUMsQ0FBQztRQUNoRCxPQUFPLENBQUMsR0FBRyxDQUFDLGFBQWEsRUFBRSxZQUFZLENBQUMsRUFBRSxDQUFDLENBQUM7UUFDNUMsT0FBTyxDQUFDLEdBQUcsQ0FBQyxtQkFBbUIsRUFBRSxZQUFZLENBQUMsUUFBUSxDQUFDLENBQUM7UUFDeEQsT0FBTyxDQUFDLEdBQUcsQ0FBQyxtQkFBbUIsRUFBRSxZQUFZLENBQUMsUUFBUSxDQUFDLENBQUM7UUFFeEQsZUFBZTtRQUNmLElBQUksY0FBYyxHQUFHLElBQUksQ0FBQyxNQUFNLFVBQUMsVUFBVSxDQUFZLENBQUM7UUFDeEQsT0FBTyxDQUFDLEdBQUcsQ0FBQyx3QkFBd0IsY0FBYyxDQUFDLENBQUMsT0FBTyxjQUFjLENBQUMsQ0FBQyxPQUFPLGNBQWMsQ0FBQyxDQUFDLEdBQUcsQ0FBQyxDQUFDO1FBRXZHLHdDQUF3QztRQUN4QyxPQUFPLENBQUMsR0FBRyxDQUFDLHVCQUF1QixZQUFZLENBQUMsUUFBUSxDQUFDLENBQUMsT0FBTyxZQUFZLENBQUMsUUFBUSxDQUFDLENBQUMsT0FBTyxZQUFZLENBQUMsUUFBUSxDQUFDLENBQUMsR0FBRyxDQUFDLENBQUM7SUFFL0gsQ0FBQztDQUtKO0FBaENELHlDQWdDQyJ9","assetPath":"Assets/1.
+    Basic/9. ScriptableObject/ScriptableObject.ts","manifest":{"properties":[{"assembly":"ZEPETO.Script","name":"player","type":"ZEPETO.Script.ZepetoScriptableObject","isArray":false,"attributes":[]},{"assembly":"ZEPETO.Script","name":"enemy","type":"ZEPETO.Script.ZepetoScriptableObject","isArray":false,"attributes":[]}],"name":"ScriptableObjectSample","description":""},"isCompiled":true}'
+  typescriptHash: 7329b75fd4ab12f4fe724226b970b429

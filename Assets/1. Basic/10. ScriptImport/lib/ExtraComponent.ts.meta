@@ -1,0 +1,30 @@
+fileFormatVersion: 2
+guid: 83fed368124894eaeab3b70f3c1ef85d
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass
+    ExtraComponent extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start()
+    {\r\n        this.message = \"Hi zepeto!\";\r\n        this.count = 0;\r\n   
+    }\r\n    Update() {\r\n        this.stringProperty = `${this.message} : ${this.count++}`;\r\n   
+    }\r\n    GetCount() {\r\n        return this.count;\r\n    }\r\n    SetCount(newCount)
+    {\r\n        this.count = newCount;\r\n    }\r\n}\r\nexports.default = ExtraComponent;\r\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRXh0cmFDb21wb25lbnQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJFeHRyYUNvbXBvbmVudC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLGlEQUFxRDtBQUVyRCxNQUFxQixjQUFlLFNBQVEscUNBQXFCO0lBTzdELEtBQUs7UUFDRCxJQUFJLENBQUMsT0FBTyxHQUFHLFlBQVksQ0FBQztRQUM1QixJQUFJLENBQUMsS0FBSyxHQUFHLENBQUMsQ0FBQztJQUNuQixDQUFDO0lBRUQsTUFBTTtRQUNGLElBQUksQ0FBQyxjQUFjLEdBQUcsR0FBRyxJQUFJLENBQUMsT0FBTyxNQUFNLElBQUksQ0FBQyxLQUFLLEVBQUUsRUFBRSxDQUFDO0lBQzlELENBQUM7SUFFRCxRQUFRO1FBQ0osT0FBTyxJQUFJLENBQUMsS0FBSyxDQUFDO0lBQ3RCLENBQUM7SUFFRCxRQUFRLENBQUMsUUFBWTtRQUNqQixJQUFJLENBQUMsS0FBSyxHQUFHLFFBQVEsQ0FBQztJQUMxQixDQUFDO0NBRUo7QUF4QkQsaUNBd0JDIn0=","assetPath":"Assets/1.
+    Basic/10. ScriptImport/lib/ExtraComponent.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"stringProperty","type":"System.String","isArray":false,"attributes":[]}],"name":"ExtraComponent","description":""},"isCompiled":true}'
+  typescriptHash: aec611b8802926b75c97c3b89505d200

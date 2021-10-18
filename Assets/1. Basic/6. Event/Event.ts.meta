@@ -1,0 +1,30 @@
+fileFormatVersion: 2
+guid: 0576a06d881b08d4bb5e6ea4cc651124
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    UnityEngine_Events_1 = require(\"UnityEngine.Events\");\r\nclass Event extends
+    ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start() {\r\n        this.mEvent
+    = new UnityEngine_Events_1.UnityEvent();\r\n        this.mEvent.AddListener(()
+    => this.Ping());\r\n    }\r\n    Update() {\r\n        if (this.mEvent != null)
+    {\r\n            this.mEvent.Invoke();\r\n        }\r\n    }\r\n    Ping() {\r\n       
+    console.log(''Ping'');\r\n    }\r\n}\r\nexports.default = Event;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRXZlbnQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJFdmVudC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLGlEQUFxRDtBQUNyRCwyREFBOEM7QUFFOUMsTUFBcUIsS0FBTSxTQUFRLHFDQUFxQjtJQUdwRCxLQUFLO1FBQ0QsSUFBSSxDQUFDLE1BQU0sR0FBRyxJQUFJLCtCQUFVLEVBQUUsQ0FBQztRQUMvQixJQUFJLENBQUMsTUFBTSxDQUFDLFdBQVcsQ0FBRSxHQUFFLEVBQUUsQ0FBQyxJQUFJLENBQUMsSUFBSSxFQUFFLENBQUUsQ0FBQztJQUNoRCxDQUFDO0lBRUQsTUFBTTtRQUNGLElBQUcsSUFBSSxDQUFDLE1BQU0sSUFBSSxJQUFJLEVBQUU7WUFDcEIsSUFBSSxDQUFDLE1BQU0sQ0FBQyxNQUFNLEVBQUUsQ0FBQztTQUN4QjtJQUNMLENBQUM7SUFFRCxJQUFJO1FBQ0EsT0FBTyxDQUFDLEdBQUcsQ0FBQyxNQUFNLENBQUMsQ0FBQztJQUN4QixDQUFDO0NBRUo7QUFsQkQsd0JBa0JDIn0=","assetPath":"Assets/1.
+    Basic/6. Event/Event.ts","manifest":{"properties":[],"name":"Event","description":""},"isCompiled":true}'
+  typescriptHash: ed6fab73a4c547e4bfea990d25fe3fae

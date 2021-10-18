@@ -1,0 +1,41 @@
+fileFormatVersion: 2
+guid: 9e821d788df9a4bc88cff626728d26cc
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    UnityEngine_1 = require(\"UnityEngine\");\r\nclass UIEvent extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    Start() {\r\n        //Slider Code\r\n        this.sliderUI.maxValue
+    = 180;\r\n        this.sliderUI.onValueChanged.AddListener((v) => {\r\n           
+    this.cubeTransform.rotation = UnityEngine_1.Quaternion.Euler(0, v, 0);\r\n       
+    });\r\n        //InputField & Button Code\r\n        this.cubeArray = [];\r\n       
+    this.createBtn.onClick.AddListener(() => {\r\n            this.CubeCreate();\r\n       
+    });\r\n        this.deleteBtn.onClick.AddListener(() => {\r\n            this.CubeDeleteAll();\r\n       
+    });\r\n    }\r\n    CubeCreate() {\r\n        var createCnt = Number(this.inputFieldUI.text);\r\n       
+    //Exception handling\r\n        if (isNaN(createCnt) ||\r\n            createCnt
+    == 0) {\r\n            return;\r\n        }\r\n        //Delete Cube\r\n       
+    this.CubeDeleteAll();\r\n        //Create Cube\r\n        for (var i = 0; i <
+    createCnt; ++i) {\r\n            var cubeObj = UnityEngine_1.GameObject.Instantiate(this.cubePrefab,
+    new UnityEngine_1.Vector3(i * 1.5, -3.5, 0), UnityEngine_1.Quaternion.identity);\r\n           
+    this.cubeArray.push(cubeObj);\r\n        }\r\n    }\r\n    CubeDeleteAll() {\r\n       
+    //Delete Cube\r\n        for (var i = 0; i < this.cubeArray.length; ++i) {\r\n           
+    UnityEngine_1.GameObject.Destroy(this.cubeArray[i]);\r\n        }\r\n       
+    this.cubeArray = [];\r\n    }\r\n}\r\nexports.default = UIEvent;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVUlFdmVudC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIlVJRXZlbnQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFDQSxpREFBcUQ7QUFDckQsNkNBQStFO0FBRy9FLE1BQXdCLE9BQVEsU0FBUyxxQ0FBcUI7SUFZMUQsS0FBSztRQUNELGFBQWE7UUFDYixJQUFJLENBQUMsUUFBUSxDQUFDLFFBQVEsR0FBRyxHQUFHLENBQUM7UUFDN0IsSUFBSSxDQUFDLFFBQVEsQ0FBQyxjQUFjLENBQUMsV0FBVyxDQUFFLENBQUMsQ0FBQyxFQUFFLEVBQUU7WUFDNUMsSUFBSSxDQUFDLGFBQWEsQ0FBQyxRQUFRLEdBQUcsd0JBQVUsQ0FBQyxLQUFLLENBQUMsQ0FBQyxFQUFFLENBQUMsRUFBRSxDQUFDLENBQUMsQ0FBQztRQUM1RCxDQUFDLENBQUMsQ0FBQztRQUVILDBCQUEwQjtRQUMxQixJQUFJLENBQUMsU0FBUyxHQUFHLEVBQUUsQ0FBQztRQUNwQixJQUFJLENBQUMsU0FBUyxDQUFDLE9BQU8sQ0FBQyxXQUFXLENBQUMsR0FBRSxFQUFFO1lBQ25DLElBQUksQ0FBQyxVQUFVLEVBQUUsQ0FBQztRQUN0QixDQUFDLENBQUMsQ0FBQztRQUNILElBQUksQ0FBQyxTQUFTLENBQUMsT0FBTyxDQUFDLFdBQVcsQ0FBQyxHQUFFLEVBQUU7WUFDbkMsSUFBSSxDQUFDLGFBQWEsRUFBRSxDQUFDO1FBQ3pCLENBQUMsQ0FBQyxDQUFDO0lBQ1AsQ0FBQztJQUVELFVBQVU7UUFDTixJQUFJLFNBQVMsR0FBRyxNQUFNLENBQUMsSUFBSSxDQUFDLFlBQVksQ0FBQyxJQUFJLENBQUMsQ0FBQztRQUUvQyxvQkFBb0I7UUFDcEIsSUFBRyxLQUFLLENBQUMsU0FBUyxDQUFDO1lBQ2YsU0FBUyxJQUFJLENBQUMsRUFBRTtZQUNoQixPQUFPO1NBQ1Y7UUFFRCxhQUFhO1FBQ2IsSUFBSSxDQUFDLGFBQWEsRUFBRSxDQUFDO1FBRXJCLGFBQWE7UUFDYixLQUFLLElBQUksQ0FBQyxHQUFHLENBQUMsRUFBRSxDQUFDLEdBQUcsU0FBUyxFQUFFLEVBQUUsQ0FBQyxFQUNsQztZQUNJLElBQUksT0FBTyxHQUFHLHdCQUFVLENBQUMsV0FBVyxDQUFDLElBQUksQ0FBQyxVQUFVLEVBQUUsSUFBSSxxQkFBTyxDQUFDLENBQUMsR0FBRyxHQUFHLEVBQUUsQ0FBQyxHQUFHLEVBQUUsQ0FBQyxDQUFDLEVBQUUsd0JBQVUsQ0FBQyxRQUFRLENBQUMsQ0FBQztZQUMxRyxJQUFJLENBQUMsU0FBUyxDQUFDLElBQUksQ0FBQyxPQUFPLENBQUMsQ0FBQztTQUNoQztJQUNMLENBQUM7SUFFRCxhQUFhO1FBQ1QsYUFBYTtRQUNiLEtBQUssSUFBSSxDQUFDLEdBQUcsQ0FBQyxFQUFFLENBQUMsR0FBRyxJQUFJLENBQUMsU0FBUyxDQUFDLE1BQU0sRUFBRSxFQUFFLENBQUMsRUFBRTtZQUM1Qyx3QkFBVSxDQUFDLE9BQU8sQ0FBQyxJQUFJLENBQUMsU0FBUyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUM7U0FDekM7UUFDRCxJQUFJLENBQUMsU0FBUyxHQUFHLEVBQUUsQ0FBQztJQUN4QixDQUFDO0NBQ0o7QUF4REQsMEJBd0RDIn0=","assetPath":"Assets/1.
+    Basic/8. UIEvent/UIEvent.ts","manifest":{"properties":[],"name":"UIEvent","description":""},"isCompiled":true}'
+  typescriptHash: 0a09a4bd5de759ecd7b3620281a78dd8
