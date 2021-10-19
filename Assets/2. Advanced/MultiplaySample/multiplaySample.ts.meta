@@ -1,0 +1,34 @@
+fileFormatVersion: 2
+guid: c54d71cb6101945d68510e4060afb575
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    ZEPETO_World_1 = require(\"ZEPETO.World\");\r\nclass multiplaySample extends
+    ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start() {\r\n        this.multiplay
+    = this.gameObject.GetComponent($typeof(ZEPETO_World_1.ZepetoWorldMultiplay));\r\n       
+    this.multiplay.add_RoomJoined((room) => {\r\n            // console.log(`RoomCreated,
+    my session id is ${room.SessionId}`);\r\n            // send message to server\r\n           
+    room.Send(\"echo\", \"hello ZEPETO Multiplay\");\r\n            // add server
+    message listener\r\n            room.AddMessageHandler(\"echo\", (message) =>
+    {\r\n                // print server message\r\n                console.log(message);\r\n           
+    });\r\n        });\r\n    }\r\n    Update() {\r\n    }\r\n}\r\nexports.default
+    = multiplaySample;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibXVsdGlwbGF5U2FtcGxlLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsibXVsdGlwbGF5U2FtcGxlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsaURBQXFEO0FBQ3JELCtDQUFvRDtBQUlwRCxNQUFxQixlQUFnQixTQUFRLHFDQUFxQjtJQUk5RCxLQUFLO1FBQ0QsSUFBSSxDQUFDLFNBQVMsR0FBRyxJQUFJLENBQUMsVUFBVSxDQUFDLFlBQVksU0FBQyxtQ0FBb0IsRUFBRyxDQUFDO1FBRXRFLElBQUksQ0FBQyxTQUFTLGdCQUFlLENBQUMsSUFBVSxFQUFFLEVBQUU7WUFDeEMsa0VBQWtFO1lBRWxFLHlCQUF5QjtZQUN6QixJQUFJLENBQUMsSUFBSSxDQUFDLE1BQU0sRUFBQyx3QkFBd0IsQ0FBQyxDQUFDO1lBRTNDLDhCQUE4QjtZQUM5QixJQUFJLENBQUMsaUJBQWlCLENBQUMsTUFBTSxFQUFDLENBQUMsT0FBTyxFQUFDLEVBQUU7Z0JBQ3JDLHVCQUF1QjtnQkFDdkIsT0FBTyxDQUFDLEdBQUcsQ0FBQyxPQUFPLENBQUMsQ0FBQztZQUN6QixDQUFDLENBQUMsQ0FBQztRQUNQLENBQUMsRUFBQztJQUNOLENBQUM7SUFFRCxNQUFNO0lBRU4sQ0FBQztDQUtKO0FBNUJELGtDQTRCQyJ9","assetPath":"Assets/2.
+    Advanced/MultiplaySample/multiplaySample.ts","manifest":{"properties":[],"name":"multiplaySample","description":""},"isCompiled":true}'
+  typescriptHash: 74e4a2acbfebe8c273e7cddf8b80ca4b

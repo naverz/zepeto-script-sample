@@ -1,0 +1,34 @@
+{
+  "State": {
+    "players": {
+      "map": "Player"
+    },
+    "transforms": {
+      "map": "Transform"
+    }
+  },
+  "Player": {
+    "userId": "string",
+    "sessionId": "string",
+    "metadata": "string",
+    "transform": "Transform"
+  },
+  "Transform": {
+    "id": "string",
+    "ownerSessionId": "string",
+    "position": "Vector3",
+    "rotation": "Vector3",
+    "positionX": "float32",
+    "positionY": "float32",
+    "positionZ": "float32",
+    "rotationX": "float32",
+    "rotationY": "float32",
+    "rotationZ": "float32"
+  },
+  "Vector3": {
+    "x": "float32",
+    "y": "float32",
+    "z": "float32"
+
+  }
+}
