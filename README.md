@@ -22,3 +22,6 @@ https://studio.zepeto.me/guides/creating-your-world
 - CharacterController
 - MultiplaySample
 
+## Multiplay Example Project 
+- https://github.com/naverz/zepeto-multiplay-example
+![Image of preview](https://github.com/naverz/zepeto-multiplay-example/blob/main/doc/preview.gif)
