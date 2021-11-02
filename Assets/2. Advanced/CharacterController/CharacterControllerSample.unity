@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -133,7 +133,6 @@ GameObject:
   m_Component:
   - component: {fileID: 29306122}
   - component: {fileID: 29306121}
-  - component: {fileID: 29306120}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -141,14 +140,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &29306120
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 29306119}
-  m_Enabled: 1
 --- !u!20 &29306121
 Camera:
   m_ObjectHideFlags: 0
@@ -215,7 +206,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 59003183}
-  - component: {fileID: 59003182}
   m_Layer: 0
   m_Name: ZepetoScriptContext
   m_TagString: Untagged
@@ -223,20 +213,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &59003182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 59003181}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1167443384, guid: 921f0445823004a16a499d629dd566a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  modules: []
-  debugMode: 1
 --- !u!4 &59003183
 Transform:
   m_ObjectHideFlags: 0
@@ -280,7 +256,38 @@ MonoBehaviour:
   m_Script: {fileID: -206261123, guid: d328479d06a874cd1bda7a86f9cdd3a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  setting: {fileID: 11400000, guid: 75eea292cf5affc4f82d91fa956f7fc8, type: 2}
+  setting: {fileID: 0}
+  cameraData:
+    cameraPrefab: {fileID: 29306119}
+    maxZoomDistance: 15
+    minZoomDistance: 1
+    maxPitch: 80
+    minPitch: -80
+    offset: {x: 0, y: 1, z: 0}
+    speed: 20
+    sensitivity: 5
+  characterData:
+    slopeLimit: 45
+    stepOffset: 0.3
+    skinWidth: 0.0001
+    minMoveDistance: 0.001
+    center: {x: 0, y: 0.6, z: 0}
+    radius: 0.23
+    height: 1.2
+    walkSpeed: 2
+    runSpeed: 5
+    jumpPower: 5
+    layer:
+      serializedVersion: 2
+      m_Bits: 0
+    animatorController: {fileID: 9100000, guid: 019901d3486cc411abc6c84594c03743, type: 2}
+    shadow: {fileID: 1025544020809228, guid: 4512418b2a1844f42961867ad8421ab8, type: 3}
+  controllerData:
+    inputAsset: {fileID: -944628639613478452, guid: 090135bc9e5ee4c89b1642240eb723fe, type: 3}
+    eventSystem: {fileID: 1413325906}
+    useDefaultVirtualController: 1
+    verticalController: {fileID: 2919188649297340810, guid: c93455f4813024972abd7e02718b345a, type: 3}
+    horizontalController: {fileID: 2787167779785370926, guid: 6f2611065df244d8c99ceed0336f3aab, type: 3}
   OnAddedLocalPlayer:
     m_PersistentCalls:
       m_Calls: []
@@ -504,9 +511,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   script:
-    keys: []
-    unityValues: []
-    values: []
+    keys:
+    - scriptInstance
+    unityValues:
+    - {fileID: 0}
+    values:
+    - '{"type":"ZEPETO.Script.ZepetoScriptInstance, ZEPETO.Script","value":"{\"keys\":[],\"unityValues\":[],\"values\":[],\"unityArrayValues\":[],\"arrayValues\":[],\"script\":{\"instanceID\":0},\"isExpaned\":false}"}'
     unityArrayValues: []
     arrayValues: []
     script: {fileID: 4458252877524076426, guid: 985ec83603db12d468045be3832eed74, type: 3}

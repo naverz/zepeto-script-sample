@@ -10,16 +10,17 @@
 			}
 		],
 		"types": [
+			"./Assets/1. Basic/7. EventTrigger",
 			"./Assets/2. Advanced/MultiplaySample/World.multiplay/SchemaTypes",
-			"./Library/PackageCache/zepeto.world@1.0.2",
-			"./Library/PackageCache/zepeto.world@1.0.2/typings/ZEPETO",
-			"./Library/PackageCache/zepeto.world@1.0.2/typings/ZEPETO.IWP",
-			"./Library/PackageCache/zepeto.world.shared@1.0.2/Runtime",
-			"./Library/PackageCache/zepeto.script@1.0.2",
-			"./Library/PackageCache/zepeto.script@1.0.2/wrapper",
-			"./Library/PackageCache/zepeto.multiplay.script@1.0.2/Runtime",
-			"./Library/PackageCache/zepeto.multiplay.script@1.0.2/Runtime/shared",
-			"./Library/PackageCache/zepeto.character.controller@1.0.2/Runtime",
+			"./Library/PackageCache/zepeto.world@1.0.3",
+			"./Library/PackageCache/zepeto.world@1.0.3/typings/ZEPETO",
+			"./Library/PackageCache/zepeto.world@1.0.3/typings/ZEPETO.IWP",
+			"./Library/PackageCache/zepeto.world.shared@1.0.3/Runtime",
+			"./Library/PackageCache/zepeto.script@1.0.3",
+			"./Library/PackageCache/zepeto.script@1.0.3/wrapper",
+			"./Library/PackageCache/zepeto.multiplay.script@1.0.3/Runtime",
+			"./Library/PackageCache/zepeto.multiplay.script@1.0.3/Runtime/shared",
+			"./Library/PackageCache/zepeto.character.controller@1.0.3/Runtime",
 			"./Library/PackageCache/zepeto.script.unityengine.typings@1.0.2/UnityEngine",
 			"./Library/PackageCache/zepeto.script.unityengine.typings@1.0.2/UnityEngine.AccessibilityModule",
 			"./Library/PackageCache/zepeto.script.unityengine.typings@1.0.2/UnityEngine.AIModule",
@@ -81,7 +82,7 @@
 			"./Library/PackageCache/zepeto.script.unityengine.typings@1.0.2/UnityEngine.VRModule",
 			"./Library/PackageCache/zepeto.script.unityengine.typings@1.0.2/UnityEngine.WindModule",
 			"./Library/PackageCache/zepeto.script.unityengine.typings@1.0.2/UnityEngine.XRModule",
-			"./Library/PackageCache/zepeto.script.leaderboard@1.0.2/Runtime"
+			"./Library/PackageCache/zepeto.script.leaderboard@1.0.3/Runtime"
 		],
 		"experimentalDecorators": true
 	}

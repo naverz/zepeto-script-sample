@@ -20,13 +20,18 @@ ScriptedImporter:
   wrapperOutputDirectory: Generated
   compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
     { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
-    ZEPETO_Character_Controller_1 = require(\"ZEPETO.Character.Controller\");\r\nclass
-    CharacterController extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start()
-    {\r\n        $extension(\"ZEPETO.Character.Controller.ZepetoPlayersExtension\").CreatePlayerWithHashCode(ZEPETO_Character_Controller_1.ZepetoPlayers.instance,
-    \"\", \"F8URQA\", new ZEPETO_Character_Controller_1.SpawnInfo(), true);\r\n       
-    // ZepetoPlayers.instance.CreatePlayerWithZepetoId(\"\", \"gamedev1\", new SpawnInfo(),
-    true)\r\n        ZEPETO_Character_Controller_1.ZepetoPlayers.instance.OnAddedLocalPlayer.AddListener(()
-    => {\r\n            let _player = ZEPETO_Character_Controller_1.ZepetoPlayers.instance.LocalPlayer;\r\n       
-    });\r\n    }\r\n}\r\nexports.default = CharacterController;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ2hhcmFjdGVyQ29udHJvbGxlclNhbXBsZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkNoYXJhY3RlckNvbnRyb2xsZXJTYW1wbGUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxpREFBcUQ7QUFDckQsNkVBQW9FO0FBRXBFLE1BQXFCLG1CQUFvQixTQUFRLHFDQUFxQjtJQUVsRSxLQUFLO1FBQ0QsaUVBQXVCLHdCQUF3QixDQUEvQywyQ0FBYSxDQUFDLFFBQVEsRUFBMEIsRUFBRSxFQUFFLFFBQVEsRUFBRSxJQUFJLHVDQUFTLEVBQUUsRUFBRSxJQUFJLEVBQUU7UUFDckYseUZBQXlGO1FBRXpGLDJDQUFhLENBQUMsUUFBUSxDQUFDLGtCQUFrQixDQUFDLFdBQVcsQ0FBQyxHQUFHLEVBQUU7WUFDdkQsSUFBSSxPQUFPLEdBQUcsMkNBQWEsQ0FBQyxRQUFRLENBQUMsV0FBVyxDQUFDO1FBQ3JELENBQUMsQ0FBQyxDQUFDO0lBQ1AsQ0FBQztDQUVKO0FBWEQsc0NBV0MifQ==","assetPath":"Assets/2.
+    ZEPETO_Character_Controller_1 = require(\"ZEPETO.Character.Controller\");\r\nconst
+    UnityEngine_1 = require(\"UnityEngine\");\r\nclass CharacterController extends
+    ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start() {\r\n        // set character
+    spawn location\r\n        var spawninfo = new ZEPETO_Character_Controller_1.SpawnInfo();\r\n       
+    spawninfo.position = UnityEngine_1.Vector3.zero;\r\n        spawninfo.rotation
+    = UnityEngine_1.Quaternion.identity;\r\n        // load charater zepeto id\r\n       
+    $extension(\"ZEPETO.Character.Controller.ZepetoPlayersExtension\").CreatePlayerWithZepetoId(ZEPETO_Character_Controller_1.ZepetoPlayers.instance,
+    \"\", \"gamedev1\", spawninfo, true);\r\n        // add init callback\r\n       
+    ZEPETO_Character_Controller_1.ZepetoPlayers.instance.OnAddedLocalPlayer.AddListener(()
+    => {\r\n            let _player = ZEPETO_Character_Controller_1.ZepetoPlayers.instance.LocalPlayer;\r\n           
+    // test jump\r\n            _player.Jump();\r\n            // debug log\r\n           
+    console.log(` player created -> ${_player.name}`);\r\n        });\r\n    }\r\n}\r\nexports.default
+    = CharacterController;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ2hhcmFjdGVyQ29udHJvbGxlclNhbXBsZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkNoYXJhY3RlckNvbnRyb2xsZXJTYW1wbGUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxpREFBcUQ7QUFDckQsNkVBQW9FO0FBQ3BFLDZDQUErQztBQUUvQyxNQUFxQixtQkFBb0IsU0FBUSxxQ0FBcUI7SUFFbEUsS0FBSztRQUNELCtCQUErQjtRQUMvQixJQUFJLFNBQVMsR0FBRyxJQUFJLHVDQUFTLEVBQUUsQ0FBQztRQUNoQyxTQUFTLENBQUMsUUFBUSxHQUFHLHFCQUFPLENBQUMsSUFBSSxDQUFDO1FBQ2xDLFNBQVMsQ0FBQyxRQUFRLEdBQUcsd0JBQVUsQ0FBQyxRQUFRLENBQUM7UUFFekMsMEJBQTBCO1FBQzFCLGlFQUF1Qix3QkFBd0IsQ0FBL0MsMkNBQWEsQ0FBQyxRQUFRLEVBQTBCLEVBQUUsRUFBRSxVQUFVLEVBQUUsU0FBUyxFQUFFLElBQUksRUFBRTtRQUVqRixvQkFBb0I7UUFDcEIsMkNBQWEsQ0FBQyxRQUFRLENBQUMsa0JBQWtCLENBQUMsV0FBVyxDQUFDLEdBQUcsRUFBRTtZQUN2RCxJQUFJLE9BQU8sR0FBRywyQ0FBYSxDQUFDLFFBQVEsQ0FBQyxXQUFXLENBQUM7WUFDakQsWUFBWTtZQUNaLE9BQU8sQ0FBQyxJQUFJLEVBQUUsQ0FBQztZQUNmLFlBQVk7WUFDWixPQUFPLENBQUMsR0FBRyxDQUFDLHNCQUFzQixPQUFPLENBQUMsSUFBSSxFQUFFLENBQUUsQ0FBQztRQUN2RCxDQUFDLENBQUMsQ0FBQztJQUNQLENBQUM7Q0FFSjtBQXJCRCxzQ0FxQkMifQ==","assetPath":"Assets/2.
     Advanced/CharacterController/CharacterControllerSample.ts","manifest":{"properties":[],"name":"CharacterController","description":""},"isCompiled":true}'
-  typescriptHash: 8402f35dbd3bd8cf617e494fa13ee23f
+  typescriptHash: c222941f9afea71f68fb6a9f789f9ca4
