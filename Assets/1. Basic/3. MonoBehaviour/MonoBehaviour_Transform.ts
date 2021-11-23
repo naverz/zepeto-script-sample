@@ -8,8 +8,7 @@
 */
 import { ZepetoScriptBehaviour } from 'ZEPETO.Script'
 
-export  default  class  MonoBehaviour_Transform extends  ZepetoScriptBehaviour
-{
+export default class MonoBehaviour_Transform extends ZepetoScriptBehaviour {
     // All Unity MonoBehaviour events are available.
     // https://docs.unity3d.com/ScriptReference/MonoBehaviour.html
     /*
