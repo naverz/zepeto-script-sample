@@ -6,6 +6,9 @@ https://studio.zepeto.me/guides/getting-started(world)
 ## Developer Guide
 https://studio.zepeto.me/guides/creating-your-world
 
+## Discussion Board
+https://github.com/naverz/zepeto-studio-kor/discussions
+
 ## Contents
 ### Basic 
 - Hello World
