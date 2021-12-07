@@ -30,4 +30,4 @@ ScriptedImporter:
     }\r\n    Update() {\r\n        this.transform.Rotate(0, 1, 0);\r\n    }\r\n}\r\nexports.default
     = MonoBehaviour_Transform;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTW9ub0JlaGF2aW91cl9UcmFuc2Zvcm0uanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJNb25vQmVoYXZpb3VyX1RyYW5zZm9ybS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUNBOzs7Ozs7RUFNRTtBQUNGLGlEQUFxRDtBQUVyRCxNQUFxQix1QkFBd0IsU0FBUSxxQ0FBcUI7SUFDdEUsZ0RBQWdEO0lBQ2hELDhEQUE4RDtJQUM5RDs7Ozs7TUFLRTtJQUVGLEtBQUs7UUFDRCxPQUFPLENBQUMsSUFBSSxDQUFDLGNBQWMsSUFBSSxDQUFDLFVBQVUsQ0FBQyxJQUFJLEVBQUUsQ0FBQyxDQUFDO0lBQ3ZELENBQUM7SUFFRCxNQUFNO1FBQ0YsSUFBSSxDQUFDLFNBQVMsQ0FBQyxNQUFNLENBQUMsQ0FBQyxFQUFFLENBQUMsRUFBRSxDQUFDLENBQUMsQ0FBQztJQUNuQyxDQUFDO0NBQ0o7QUFqQkQsMENBaUJDIn0=","assetPath":"Assets/1.
     Basic/3. MonoBehaviour/MonoBehaviour_Transform.ts","manifest":{"properties":[],"name":"MonoBehaviour_Transform","description":""},"isCompiled":true}'
-  typescriptHash: af9dffcff7154507d14ad3331328df56
+  typescriptHash: e45e4db3772212b205e682277f8b7eb6
