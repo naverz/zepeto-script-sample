@@ -3,8 +3,8 @@ import {Slider,InputField,Button} from "UnityEngine.UI";
 
 export default class UI_Event extends ZepetoScriptBehaviour {
 
-    private sliderUI:Slider;
-    private btnUI:Button;
+    public sliderUI:Slider;
+    public btnUI:Button;
 
     Start(){
         this.btnUI.onClick.AddListener(()=>{

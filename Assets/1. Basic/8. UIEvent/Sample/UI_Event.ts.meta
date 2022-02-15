@@ -26,5 +26,5 @@ ScriptedImporter:
     => {\r\n            // add slider event\r\n            console.log(`[${v}] sliderUI
     onValueChanged`);\r\n        });\r\n    }\r\n}\r\nexports.default = UI_Event;\r\n//#
     sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVUlfRXZlbnQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJVSV9FdmVudC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLGlEQUFxRDtBQUdyRCxNQUFxQixRQUFTLFNBQVEscUNBQXFCO0lBS3ZELEtBQUs7UUFDRCxJQUFJLENBQUMsS0FBSyxDQUFDLE9BQU8sQ0FBQyxXQUFXLENBQUMsR0FBRSxFQUFFO1lBQy9CLHlCQUF5QjtZQUN6QixPQUFPLENBQUMsR0FBRyxDQUFDLGVBQWUsQ0FBQyxDQUFDO1FBQ2pDLENBQUMsQ0FBQyxDQUFDO1FBQ0gsSUFBSSxDQUFDLFFBQVEsQ0FBQyxjQUFjLENBQUMsV0FBVyxDQUFFLENBQUMsQ0FBQyxFQUFFLEVBQUU7WUFDNUMsbUJBQW1CO1lBQ25CLE9BQU8sQ0FBQyxHQUFHLENBQUMsSUFBSSxDQUFDLDJCQUEyQixDQUFDLENBQUM7UUFDbEQsQ0FBQyxDQUFDLENBQUM7SUFDUCxDQUFDO0NBQ0o7QUFmRCwyQkFlQyJ9","assetPath":"Assets/1.
-    Basic/8. UIEvent/Sample/UI_Event.ts","manifest":{"properties":[],"name":"UI_Event","description":""},"isCompiled":true}'
-  typescriptHash: 64bc7aa29743f9fa9654b9dac598bad4
+    Basic/8. UIEvent/Sample/UI_Event.ts","manifest":{"properties":[{"assembly":"UnityEngine.UI","name":"sliderUI","type":"UnityEngine.UI.Slider","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.UI","name":"btnUI","type":"UnityEngine.UI.Button","isArray":false,"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"UI_Event","description":""},"isCompiled":true}'
+  typescriptHash: 2d6bc12c38eb25ce8b117b5de0d3e712

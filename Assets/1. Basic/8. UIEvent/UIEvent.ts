@@ -5,15 +5,15 @@ import {Button, InputField, Slider} from "UnityEngine.UI";
 
 export  default  class  UIEvent extends  ZepetoScriptBehaviour{
     //Slider Code
-    private cubeTransform:Transform;
-    private sliderUI:Slider;
+    public cubeTransform:Transform;
+    public sliderUI:Slider;
 
     //InputField & Button Code
-    private cubePrefab:GameObject;
-    private inputFieldUI:InputField;
-    private createBtn:Button;
-    private deleteBtn:Button;
-    private cubeArray:Object[];
+    public cubePrefab:GameObject;
+    public inputFieldUI:InputField;
+    public createBtn:Button;
+    public deleteBtn:Button;
+    public cubeArray:Object[];
     
     Start(){
         //Slider Code
